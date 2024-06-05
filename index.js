@@ -7,10 +7,10 @@ const cookieParser = require('cookie-parser');
 const app = express();
 const path= require("path");
 
-// if(process.env.NODE_ENV!=="PRODUCTION"){
-//     require('dotenv').config();
-// }
-require('dotenv').config();
+if(process.env.NODE_ENV!=="PRODUCTION"){
+    require('dotenv').config();
+}
+// require('dotenv').config();
 
 
 // Middleware
